@@ -266,11 +266,12 @@ nav ul li a {
     margin: flex;
 }
 
-container {
+
+/* .container {
     max-width: 1200px;
     width: 90%;
     margin: auto;
-}
+} */
 
 .img-box {
     display: flex;
@@ -328,7 +329,10 @@ container {
     opacity: 1s;
 }
 
-@media screen and (max-width:770px){
+@media screen and (max-width:770px) {
+    .sevice-box {
+        width: 100%;
+    }
     .single-service {
         flex-basis: 100%;
         margin-bottom: 30px;
@@ -342,101 +346,115 @@ container {
     .single-service:hover .service-desc {
         bottom: 25% !important;
     }
+    .img-box img {
+        margin-bottom: 20px;
+        width: 300px;
+        height: auto;
+    }
 }
-    #testimonial {
-        width: 100%;
-        padding: 70px 0;
-    }
-    .testimonial-row {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    .testimonial-col {
-        flex-basis: 28%;
-        padding: 10px;
-        margin-bottom: 30px;
-        border-radius: 5px;
-        box-shadow: 0 10px 20px 3px #00968814;
-    }
-    .testimonial-col{
-        font-size: 14px;
-    }
 
-    /*--footer--*/
-    #footer{
-        padding:100px 0 20px;
-        background:#efefef;
-        position:relative;
-    }
-    .footer-row {
-        display: flex;
-    }
-    
+#testimonial {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonial-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+}
+
+.testimonial-col {
+    font-size: 14px;
+}
+
+
+/*--footer--*/
+
+#footer {
+    padding: 100px 0 20px;
+    background: #efefef;
+    position: relative;
+}
+
+.footer-row {
+    display: flex;
+}
+
+.footer-left,
+.footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+
+.footer-row p {
+    line-height: 35px;
+}
+
+.footer-left .bx,
+.footer-right .bx {
+    font-size: 20px;
+    color: #009688;
+    margin: 10px;
+}
+
+.footer-img {
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links .bx {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.social-links .bx:hover {
+    background: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+@media screen and (max-width:770px) {
     .footer-left,
     .footer-right {
-        flex-basis: 45%;
-        padding: 10px;
-        margin-bottom: 20px;
+        flex-basis: 100%;
+        font-size: 14px;
     }
-    
-    .footer-right {
-        text-align: right;
+    .features-img {
+        top: 25px;
     }
-    
-    .footer-row h1{
-        margin:10px 0;
-    }.footer-row p{
-        line-height:35px;
-    }
-    .footer-left .bx,.footer-right .bx{
-        font-size:20px;
-        color:#009688;
-        margin:10px;
-    }
-    .footer-img{
-        max-width:370px;
-        opacity: 0.1;
-        position:absolute;
-        left:50%;
-        top:35%;
-        transform:translate(-50%,-50%);
-    }
-    .social-links{
-        text-align:center;
-    }
-    .social-links .bx{
-        height:40px;
-        width:40px;
-        font-size: 20px;
-        line-height: 40px;
-        border:1px solid #009688;
-        margin:40px 5px 0;
-        cursor:pointer;
-        transition: 0.5s;
-    }
-    .social-links .bx:hover{
-        background:#009688;
-        color:#fff;
-        transform:translateY(-7px);
-    }
-    @media screen and (max-width:770px){
-        .footer-left,.footer-right {
-            flex-basis: 100%;
-            font-size: 14px;
-        }
-        .features-img{
-            top: 25px;
-        }
-    }
-
-
-    
-    
-    
-    
-
-    
+}
