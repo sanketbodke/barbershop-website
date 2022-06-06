@@ -24,10 +24,10 @@
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#banner">HOME</a></li>
                 <li><a href="#features">FEATURES</a></li>
                 <li><a href="#service">SERVICES</a></li>
-                <li><a href="#testimonial">TESTIMONIALS</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
                 <li><a href="#footer">MEET US</a></li>
             </ul>
         </nav>
@@ -242,7 +242,7 @@
 
     </section>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         var menuBtn = document.getElementById("menuBtn")
         var sideNav = document.getElementById("sideNav")
@@ -257,7 +257,26 @@
                 menu.src = "barbershop_img/menu.png";
             }
         }
+
+        $(document).ready(function() {
+
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
     </script>
+
 </body>
 
 </html>
