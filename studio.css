@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 #banner {
@@ -26,7 +26,7 @@
 
 .banner-text h1 {
     font-size: 130px;
-    font-family: 'Kaushan Script';
+    font-family: "Kaushan Script";
 }
 
 .banner-text p {
@@ -45,7 +45,7 @@
     margin: 0 10px;
     padding: 12px 0;
     color: #fff;
-    border: .5px solid #fff;
+    border: 0.5px solid #fff;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
@@ -109,7 +109,7 @@ nav ul li a {
     margin-top: 15px;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
     .banner-text h1 {
         font-size: 44px;
     }
@@ -154,7 +154,7 @@ nav ul li a {
 }
 
 .title-text p::after {
-    content: '';
+    content: "";
     width: 50px;
     height: 35px;
     background: linear-gradient(#019587, #fff);
@@ -219,7 +219,7 @@ nav ul li a {
     text-align: initial;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
     .title-text h1 {
         font-size: 35px;
     }
@@ -329,7 +329,7 @@ nav ul li a {
     opacity: 1s;
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
     .sevice-box {
         width: 100%;
     }
@@ -448,7 +448,7 @@ nav ul li a {
     transform: translateY(-7px);
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width: 770px) {
     .footer-row {
         flex-direction: column;
     }
@@ -463,5 +463,57 @@ nav ul li a {
     }
     .features-img {
         top: 25px;
+    }
+}
+
+
+/* ........./ Testimonial /.......... */
+
+#testimonials {
+    padding: 5rem 0;
+}
+
+.testimonial-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.testimonial-box .checked {
+    color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+    margin: 1rem 0;
+    color: #444;
+}
+
+.testimonial-box {
+    text-align: center;
+    padding: 1rem;
+}
+
+.customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    .testimonial-container {
+        flex-direction: column;
+        text-align: center;
     }
 }
